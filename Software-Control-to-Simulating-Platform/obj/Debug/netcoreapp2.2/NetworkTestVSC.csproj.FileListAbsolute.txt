@@ -1,0 +1,77 @@
+/Users/jack/Desktop/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/VSC/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/VSC/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/VSC/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/VSC/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/VSC/NetworkTestVSC/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/VSC/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/VSC/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/VSC/NetworkTestVSC/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/VSC/NetworkTestVSC(Backup 07051645)/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/VSC/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/NetworkTestVSC(USE THIS ONE)/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
