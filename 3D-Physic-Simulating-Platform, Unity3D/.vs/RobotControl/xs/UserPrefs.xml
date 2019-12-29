@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{53A4B844-E47F-FAFA-F337-AEA41CBC9806}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RobotCode/LowerArmSlider.cs">
+    <Files>
+      <File FileName="Assets/Scripts/RobotCode/BaseSlider.cs" Line="18" Column="50" />
+      <File FileName="Assets/Scripts/RobotCode/UpperArmSlider.cs" Line="45" Column="10" />
+      <File FileName="Assets/Scripts/RobotCode/LowerArmSlider.cs" Line="85" Column="3" />
+      <File FileName="Assets/Scripts/RobotCode/Kinematics.cs" Line="24" Column="25" />
+      <File FileName="Assets/Scripts/RobotCode/DHParameters.cs" Line="15" Column="10" />
+      <File FileName="Assets/Scripts/RobotCode/EmergencyStop.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/RobotCode/InitializeArm.cs" Line="9" Column="32" />
+      <File FileName="Assets/Scripts/RobotCode/KnotPoints.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/RobotCode/Theta1.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/RobotCode/Theta2.cs" Line="14" Column="17" />
+      <File FileName="Assets/Scripts/RobotCode/Theta3.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainControl.cs" Line="131" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RobotControl" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="RobotCode" expanded="True">
+                  <Node name="LowerArmSlider.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Shaders" expanded="True" />
+              <Node name="Texture" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="RobotControl" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="554f10c5-86fd-4301-a6cc-3731150ec2ff" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

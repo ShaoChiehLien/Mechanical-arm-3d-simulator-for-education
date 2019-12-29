@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{F10D3A1A-236F-5F4D-30C8-845B878D0A9D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/IronScripts/MainControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/IronScripts/MainControl.cs" Line="41" Column="60" />
+      <File FileName="Assets/Scripts/JackScripts/TCPIP/Server/Server.cs" Line="18" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RobotControl(UseThisOne) " expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="IronScripts" expanded="True">
+                  <Node name="MainControl.cs" selected="True" />
+                </Node>
+                <Node name="JackScripts" expanded="True">
+                  <Node name="RobotCode(Do Not Change)" expanded="True" />
+                  <Node name="TCPIP" expanded="True">
+                    <Node name="Server" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6df616bb-0d70-40ad-b5af-016155ba68b0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

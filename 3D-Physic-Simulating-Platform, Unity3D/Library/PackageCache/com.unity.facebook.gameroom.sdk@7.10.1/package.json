@@ -1,0 +1,7 @@
+{
+	"name": "com.unity.facebook.gameroom.sdk",
+	"displayName": "Facebook Gameroom SDK",
+	"version": "7.10.1",
+	"unity": "2018.1",
+	"description": "Facebook Gameroom platform support including Facebook SDK for Unity"
+}

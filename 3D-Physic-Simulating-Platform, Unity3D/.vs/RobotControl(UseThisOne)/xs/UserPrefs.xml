@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{34F0E51B-36B4-BFB0-E6CA-FA2E9F804726}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/IronScripts/MainControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/IronScripts/MainControl.cs" Line="455" Column="54" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="659adb4f-f776-4218-8a00-cd70a7046595" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
