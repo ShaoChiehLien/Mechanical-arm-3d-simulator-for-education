@@ -4,9 +4,6 @@ Introduction: This 3D simulating platform is designed for users to test their pr
 # Specialy of this Project
 Transmission Control Protocol(TCP) for Wifi Communication, Forward and Inverse kinematics for Silumating Robotic Arm Control. Unique Machine Code for Software Interface, Application have be successfully testing on Window, MacOS and iOS.
 
-# Practical Use in Real Life
-
-
 # Two Sub-projects
 "3D-Physic-Simulating-Platform, Unity3D", Platform: Unity 3D, Language: C# : 
 The simulating platform displayed the robotic arm and the basic slider control.
