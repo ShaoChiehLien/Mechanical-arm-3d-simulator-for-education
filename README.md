@@ -8,4 +8,4 @@ The simulating platform displayed the robotic arm and the basic slider control.
 "Software-Control-to-Simulating-Platform", Platform: Visual Studio Code, Language: C# : 
 Coding environment for user to control the robotic arm movement using Wifi communication.
                                             
-
+# https://www.youtube.com/watch?v=cD4cstsssPw
