@@ -2,7 +2,7 @@
 Introduction: This 3D simulating platform is designed for users to test their program on a simulating robotic arm without needing a physical robotic arm. On the platform, a 3D model of a robotic arm and an object for testing the grabbing function is given. Users could control the robotic arm through the slider provided on the User Interface. To control the robotic arm by programming, users could use Visual Studio Code and the library written by us to control each motor and the gripper of the simulating arm. After executing the program, the machine code would be sent via the Wifi connection to the platform and control the simulating arm.
 
 # Specialy of this Project
-There are several unique tecnniques used in this project: Transmission Control Protocol(TCP) for Wifi Communication, Forward and Inverse kinematics for Silumating Robotic Arm Control. Unique Machine Code for Software Interface, Application have be successfully testing on Window, MacOS and iOS.
+There are several unique techniques used in this project: Transmission Control Protocol(TCP) for Wifi Communication, Forward and Inverse kinematics for Silumating Robotic Arm Control. Unique Machine Code for Software Interface. This app has been successfully tested on Window, MacOS and iOS.
 
 # Two Sub-projects
 "3D-Physic-Simulating-Platform, Unity3D", Platform: Unity 3D, Language: C# : 
