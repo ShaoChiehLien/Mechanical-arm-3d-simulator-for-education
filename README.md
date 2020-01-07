@@ -9,7 +9,7 @@ There are several unique techniques used in this project: Transmission Control P
 The simulating platform displayed the robotic arm and the basic slider control.
 
 "Software-Control-to-Simulating-Platform", Platform: Visual Studio Code, Language: C# : 
-Coding environment for user to control the robotic arm movement using Wifi communication.
+Coding environment for users to control the robotic arm movement using Wifi communication.
                                             
 # Project Video Demostration
 https://www.youtube.com/watch?v=cD4cstsssPw
