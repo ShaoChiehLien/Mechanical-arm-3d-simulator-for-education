@@ -33,34 +33,34 @@ namespace NetworkTestVSC
             PTPCoordinateParams ptpCoordinateParams = new PTPCoordinateParams();
             PTPCmd ptpCmd = new PTPCmd();
 
-            //逆運動速度設定
+            //Set up the velocity of inverse kinematics
             ptpCoordinateParams.xyzVelocity = 100;
             SetPTPCoordinateParams(ptpCoordinateParams);
 
-            //正運動速度設定
+            //Set up the velocity of forward kinematics
             ptpJointParams.velocity[0] = 50F;
             ptpJointParams.velocity[1] = 50F;
             ptpJointParams.velocity[2] = 50F;
             SetPTPJointParams(ptpJointParams);
 
-            //逆運動學移到點（-270, 140, 95）
+            //Use forward kinematics, move to coordinate（-270, 140, 95）
             ptpCmd.ptpMode = 1;
             ptpCmd.x = -270F;
             ptpCmd.y = 140F;
             ptpCmd.z = 95F;
             SetPTPCmd(ptpCmd);
 
-            //吸盤吸著物體
+            //Turn on the suction cup
             SetEndEffectorSuctionCup(true);
 
-            //正運動學移到點（130, 45, 56.9）
+            //Use forward kinematics, move to coordinate（130, 45, 56.9）
             ptpCmd.ptpMode = 3;
             ptpCmd.x = 130F;
             ptpCmd.y = 45F;
             ptpCmd.z = 56.9F;
             SetPTPCmd(ptpCmd);
 
-            //吸盤放開物體
+            //Turn on the suction cup and release the object
             SetEndEffectorSuctionCup(false);
 
             /* ********************************************************** */
@@ -70,6 +70,7 @@ namespace NetworkTestVSC
             Console.WriteLine("Program End");
         }
         
+        //Reference for the communcation protocol for each function: Dobot-Communication-Protocol-V1.1.5.pdf
         //ID 62, SetEndEffectorSuctionCup
         static void SetEndEffectorSuctionCup(bool isSucked)
         {
@@ -99,7 +100,7 @@ namespace NetworkTestVSC
             
             DATA_TO_SEND[7] = message.paramsLen;
 
-            ////////////
+            //Send instruction
             string hexString = string.Empty;
             hexString = ToHexString(DATA_TO_SEND);
 
@@ -189,7 +190,7 @@ namespace NetworkTestVSC
             } 
             DATA_TO_SEND[37] = message.paramsLen;
 
-            ////////////
+            //Send instruction
             string hexString = string.Empty;
             hexString = ToHexString(DATA_TO_SEND);
 
@@ -242,6 +243,7 @@ namespace NetworkTestVSC
 
             DATA_TO_SEND[21] = message.paramsLen;
 
+            //Send instruction
             string hexString = string.Empty;
             hexString = ToHexString(DATA_TO_SEND);
 
@@ -289,6 +291,7 @@ namespace NetworkTestVSC
 
             DATA_TO_SEND[22] = message.paramsLen;
 
+            //Send instruction
             string hexString = string.Empty;
             hexString = ToHexString(DATA_TO_SEND);
 

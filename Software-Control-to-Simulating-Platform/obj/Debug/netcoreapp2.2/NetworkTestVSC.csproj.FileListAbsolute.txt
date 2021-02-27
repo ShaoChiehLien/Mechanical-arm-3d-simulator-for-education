@@ -75,3 +75,15 @@
 /Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
 /Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
 /Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/bin/Debug/netcoreapp2.2/NetworkTestVSC.deps.json
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.json
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/bin/Debug/netcoreapp2.2/NetworkTestVSC.runtimeconfig.dev.json
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/bin/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/bin/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.csprojAssemblyReference.cache
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfoInputs.cache
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.AssemblyInfo.cs
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.csproj.CoreCompileInputs.cache
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.dll
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.pdb
+/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/Debug/netcoreapp2.2/NetworkTestVSC.genruntimeconfig.cache

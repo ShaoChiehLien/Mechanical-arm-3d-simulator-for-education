@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/NetworkTestVSC.csproj": {}
+    "/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/NetworkTestVSC.csproj": {}
   },
   "projects": {
-    "/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/NetworkTestVSC.csproj": {
+    "/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/NetworkTestVSC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/NetworkTestVSC.csproj",
+        "projectUniqueName": "/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/NetworkTestVSC.csproj",
         "projectName": "NetworkTestVSC",
-        "projectPath": "/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/NetworkTestVSC.csproj",
-        "packagesPath": "/Users/jack/.nuget/packages/",
-        "outputPath": "/Users/jack/Desktop/MyProjects/MeArm專案(2019暑假 Jack & Iron)/MeArm API (VSC)/obj/",
+        "projectPath": "/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/NetworkTestVSC.csproj",
+        "packagesPath": "/Users/test/.nuget/packages/",
+        "outputPath": "/Users/test/3D-Physic-Simulating-Platform/Software-Control-to-Simulating-Platform/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/jack/.nuget/NuGet/NuGet.Config"
+          "/Users/test/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -47,10 +47,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }
