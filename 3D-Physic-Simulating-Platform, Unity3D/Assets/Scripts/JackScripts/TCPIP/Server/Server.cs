@@ -18,6 +18,7 @@ public class Server : MonoBehaviour
     public MainControl mainControlScript;
     public int byte_stored_pointer;
 
+    //Start the server and wait for client to connet
     private void Start()
     {
         byte_stored_pointer = 0;
@@ -39,6 +40,7 @@ public class Server : MonoBehaviour
         }
     }
 
+    // Update one a while to check if there is any incoming data
     private void Update()
     {
         if (!serverStarted)
@@ -77,6 +79,7 @@ public class Server : MonoBehaviour
         server.BeginAcceptTcpClient(AcceptTcpClient, server);
     }
 
+    //Check if the client is connected to the server
     private bool IsConnected(TcpClient c)
     {
         try
@@ -99,6 +102,7 @@ public class Server : MonoBehaviour
         }
     }
 
+    // Check if the client is accepted from tcpip
     private void AcceptTcpClient(IAsyncResult ar)
     {
         TcpListener listener = (TcpListener)ar.AsyncState;
@@ -109,11 +113,11 @@ public class Server : MonoBehaviour
         Broadcast("%NAME", new List<ServerClient>() { clients[clients.Count - 1] });
     }
 
+    // Read in the data from ServerCLient
     private void OnIncomingData(ServerClient c, string data)
     {
         byte[] byteDATAS = new byte[data.Length / 2];
         StringToByteArray(data, byteDATAS);
-        //
         for(int i = 0; i < byteDATAS.Length; i++)
         {
             mainControlScript.instructionsBytes[i + byte_stored_pointer] = byteDATAS[i];
@@ -123,7 +127,7 @@ public class Server : MonoBehaviour
         Debug.Log(c.clientName + " has sent the following message :" + data);
     }
 
-    //////////////////
+    //Convert string to byte array so it could be sent via TCPIP
     private void StringToByteArray(string data, byte[] byteDATAS)
     {
         byte[] tempDatas = new byte[data.Length];
@@ -147,9 +151,7 @@ public class Server : MonoBehaviour
     }
 
 
-
-    //////////////////
-
+    // Broad cast the data
     private void Broadcast(string data, List<ServerClient> cl)
     {
         foreach(ServerClient c in cl)

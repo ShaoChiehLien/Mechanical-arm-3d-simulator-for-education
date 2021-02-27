@@ -10,10 +10,10 @@ using System.Threading;
 public class MainControl : MonoBehaviour
 {
 
-    public Slider sliderTheta0;//base rotation
-    public Slider sliderTheta1;//lower rotation
-    public Slider sliderTheta2;//upper rotation
-    //掌握上三變數，即可掌握機械手臂馬達
+    public Slider sliderTheta0; //base motor rotation
+    public Slider sliderTheta1; //lower motor rotation
+    public Slider sliderTheta2; //upper motor rotation
+
     public GameObject UpperArm;
     public GameObject objectSphere;
     public GameObject objectSphere1;
@@ -32,18 +32,17 @@ public class MainControl : MonoBehaviour
     public Server serverScript;//use value in server
 
 
-    public byte[] instructionsBytes = new byte[10000];//共有資料
+    public byte[] instructionsBytes = new byte[10000]; // Assume there are 10000 bytes of data
 
-
-    public float originx, originy, originz; //程式啟動的手臂末端座標
-    public float motor1x = 0, motor1y = 138, motor1z = -60; //馬達1座標
-    public float V80x, V80y, V80z, A80x, A80y, A80z;//三軸關節速度及加速度
-    public float V81, A81;//手臂末端xyz三方向合力速度及加速度
+    public float originx, originy, originz; //Coordincate of the suction cup
+    public float motor1x = 0, motor1y = 138, motor1z = -60; //Coordincate of motor 1
+    public float V80x, V80y, V80z, A80x, A80y, A80z;//Velocity and Accelerated Velocity of three motors
+    public float V81, A81;//Velocity and Accelerated Velocity of suction cup
     float V84x, V84y, V84z;
 
 
 
-    float TargetCoorX, TargetCoorY, TargetCoorZ;  //利用關節的角度所算出的目標物座標
+    float TargetCoorX, TargetCoorY, TargetCoorZ; //Use the angle of each motor to caculate the target coordinate
 
 
 
@@ -103,15 +102,15 @@ public class MainControl : MonoBehaviour
 
         while (((instructionsBytes[RDpointer] == instructionsBytes[RDpointer + 1]) && instructionsBytes[RDpointer] == 170) && ((instructionsBytes[RDpointer + 2]) == instructionsBytes[RDpointer + 2 + 1 + instructionsBytes[RDpointer + 2]]))
         {
-            bool CloseCond = suckfunc(objectSphere.transform.position.x, objectSphere.transform.position.y, objectSphere.transform.position.z); //隨時更新末端和目標物的角度關係
-            // bool CloseCond = true;
-            //----------------------------------------------------------------------------------------------------------------
+            bool CloseCond = suckfunc(objectSphere.transform.position.x, objectSphere.transform.position.y, objectSphere.transform.position.z); // Contantly update the relation between target and current position
+            //Reference for the communcation protocol for each function: Dobot-Communication-Protocol-V1.1.5.pdf
+            //ID 62, SetEndEffectorSuctionCup
             if (instructionsBytes[RDpointer + 3] == 62)
             {
 
                 if (instructionsBytes[RDpointer + 6] == 0 && sucked == false)
                 {
-                    Debug.Log("Unsucked");//未吸到
+                    Debug.Log("Unsucked");//Didn't get the ubject
                 }
 
 
@@ -138,75 +137,67 @@ public class MainControl : MonoBehaviour
 
                 }
             }
-            //----------------------------------------------------------------------------------------------------------------
-            if (instructionsBytes[RDpointer + 3] == 73) //Setjogcmd
-            {//執行點動功能
-
+            //Reference for the communcation protocol for each function: Dobot-Communication-Protocol-V1.1.5.pdf
+            //ID 73, SetJOGCmd
+            if (instructionsBytes[RDpointer + 3] == 73) // Execute unit movement
+            {
                 if (instructionsBytes[RDpointer + 5] == 0)
-                {//逆運動
+                {// Inverse kinemetic
                     JOGcmdcoor(instructionsBytes[RDpointer + 6]);
 
                 }
                 else if (instructionsBytes[RDpointer + 5] == 1)
-                {//正運動
+                {// Forward kinemetic
 
 
                     JOGcmdsection(instructionsBytes[RDpointer + 6]);
                 }
-                //RDpointer = RDpointer + instructionsBytes[RDpointer + 2] + 4;
             }
-            //----------------------------------------------------------------------------------------------------------------
+            //Reference for the communcation protocol for each function: Dobot-Communication-Protocol-V1.1.5.pdf
+            //ID 80, SetPTPJointParams
             if (instructionsBytes[RDpointer + 3] == 80) //Setptpjointparameters
-            {//正運動 設置關節點位參數
+            {// Forward kinemetic: set up coordinate
 
                 byte[] Vx = { instructionsBytes[RDpointer + 5], instructionsBytes[RDpointer + 6], instructionsBytes[RDpointer + 7], instructionsBytes[RDpointer + 8] };
-                V80x = BitConverter.ToSingle(Vx, 0); //儲存馬達0轉動速度
+                V80x = BitConverter.ToSingle(Vx, 0); // Store motor 0's rotation speed
                 byte[] Vy = { instructionsBytes[RDpointer + 9], instructionsBytes[RDpointer + 10], instructionsBytes[RDpointer + 11], instructionsBytes[RDpointer + 12] };
-                V80y = BitConverter.ToSingle(Vy, 0); //儲存馬達1轉動速度
+                V80y = BitConverter.ToSingle(Vy, 0); // Store motor 1's rotation speed
                 byte[] Vz = { instructionsBytes[RDpointer + 13], instructionsBytes[RDpointer + 14], instructionsBytes[RDpointer + 15], instructionsBytes[RDpointer + 16] };
-                V80z = BitConverter.ToSingle(Vz, 0); //儲存馬達2轉動速度
+                V80z = BitConverter.ToSingle(Vz, 0); // Store motor 2's rotation speed
 
                 byte[] Ax = { instructionsBytes[RDpointer + 21], instructionsBytes[RDpointer + 22], instructionsBytes[RDpointer + 23], instructionsBytes[RDpointer + 24] };
-                A80x = BitConverter.ToSingle(Ax, 0); //儲存馬達0轉動加速度
+                A80x = BitConverter.ToSingle(Ax, 0); // Store motor 0's rotation speed
                 byte[] Ay = { instructionsBytes[RDpointer + 25], instructionsBytes[RDpointer + 26], instructionsBytes[RDpointer + 27], instructionsBytes[RDpointer + 28] };
-                A80y = BitConverter.ToSingle(Ay, 0); //儲存馬達1轉動加速度
+                A80y = BitConverter.ToSingle(Ay, 0); // Store motor 1's rotation speed
                 byte[] Az = { instructionsBytes[RDpointer + 29], instructionsBytes[RDpointer + 30], instructionsBytes[RDpointer + 31], instructionsBytes[RDpointer + 32] };
-                A80z = BitConverter.ToSingle(Az, 0); //儲存馬達2轉動加速度
-
-                //RDpointer = RDpointer + instructionsBytes[RDpointer + 2] + 4;
+                A80z = BitConverter.ToSingle(Az, 0); // Store motor 2's rotation speed
 
             }
-            //----------------------------------------------------------------------------------------------------------------
+            //Reference for the communcation protocol for each function: Dobot-Communication-Protocol-V1.1.5.pdf
+            //ID 81, SetPTPCoordinateParams
             if (instructionsBytes[RDpointer + 3] == 81) //SetptpCoordinateParams
-            {//逆運動 座標軸點位參數
+            {// Inverse kinemetic: set up coordinate
 
                 byte[] V = { instructionsBytes[RDpointer + 5], instructionsBytes[RDpointer + 6], instructionsBytes[RDpointer + 7], instructionsBytes[RDpointer + 8] };
-                V81 = BitConverter.ToSingle(V, 0); //儲存三方向合力速度
+                V81 = BitConverter.ToSingle(V, 0); // Store the velocity of three vectors
 
 
                 byte[] A = { instructionsBytes[RDpointer + 13], instructionsBytes[RDpointer + 14], instructionsBytes[RDpointer + 15], instructionsBytes[RDpointer + 16] };
-                A81 = BitConverter.ToSingle(A, 0); //儲存三方向合力加速度
-
-
-                //RDpointer = RDpointer + instructionsBytes[RDpointer + 2] + 4;
+                A81 = BitConverter.ToSingle(A, 0); // Store the accelerated velocity of three vectors
 
             }
-            //----------------------------------------------------------------------------------------------------------------
+            //ID 84, SetPTPCmd
             if (instructionsBytes[RDpointer + 3] == 84) //Setptpcmd
-            {//執行點位功能
-
-
+            {
                 byte[] Vx = { instructionsBytes[RDpointer + 6], instructionsBytes[RDpointer + 7], instructionsBytes[RDpointer + 8], instructionsBytes[RDpointer + 9] };
-                V84x = BitConverter.ToSingle(Vx, 0); //儲存目標物Ｘ座標或關節角度
+                V84x = BitConverter.ToSingle(Vx, 0); //Stere target's x coordinate and motor angle
                 byte[] Vy = { instructionsBytes[RDpointer + 10], instructionsBytes[RDpointer + 11], instructionsBytes[RDpointer + 12], instructionsBytes[RDpointer + 13] };
-                V84y = BitConverter.ToSingle(Vy, 0); //儲存目標物Ｙ座標或關節角度
+                V84y = BitConverter.ToSingle(Vy, 0); //Stere target's y coordinate and motor angle
                 byte[] Vz = { instructionsBytes[RDpointer + 14], instructionsBytes[RDpointer + 15], instructionsBytes[RDpointer + 16], instructionsBytes[RDpointer + 17] };
-                V84z = BitConverter.ToSingle(Vz, 0); //儲存目標物Ｚ座標或關節角度
+                V84z = BitConverter.ToSingle(Vz, 0); //Stere target's z coordinate and motor angle
 
                 if (instructionsBytes[RDpointer + 5] == 0 || instructionsBytes[RDpointer + 5] == 1 || instructionsBytes[RDpointer + 5] == 2)
-                {//做逆運動 XYZ所存為目標物座標
-
-
+                {
 
                     float motor0theta, motor1theta, motor2theta;
                     bool OutRGcond1 = Mathf.Sqrt(V84x * V84x + (V84y - 138) * (V84y - 138) + (V84z + 60) * (V84z + 60)) > (135 + 187);
@@ -215,18 +206,12 @@ public class MainControl : MonoBehaviour
                     bool OutRGcond4 = Mathf.Sqrt(18225 + V84x * V84x + (138 - V84y) * (138 - V84y) + (V84z + 60) * (V84z + 60) - 2 * 135 * Mathf.Sqrt(V84x * V84x + (V84z + 60) * (V84z + 60))) > 187;
                     bool OutRGcond5 = (-V84x > 322 || -V84x < 0 || V84y > 460 || V84y < 0 || V84z > 262 || V84z < -382);
 
-                    //此處dubug可確認哪座標不符合哪些條件
-                    //Debug.Log(OutRGcond1);
-                    //Debug.Log(OutRGcond2);
-                    //Debug.Log(OutRGcond3);
-                    //Debug.Log(OutRGcond4);
-                    //Debug.Log(OutRGcond5);
                     if (false/*OutRGcond1 || OutRGcond2 || OutRGcond3 || (OutRGcond4 && V84y < 138) || OutRGcond5*/)
                     {
                         Debug.Log("Out of Range");
                     }
                     else
-                    { //已知 V81合力速度 A81合力加速度的值
+                    { //Use the known v81 velocity to apporximate the A81 velocity
                         float TargetDest = (float)Math.Sqrt(V84x * V84x + (V84y - 138) * (V84y - 138) + (V84z + 60) * (V84z + 60));
                         if (V84z > -60)
                         {
@@ -248,8 +233,6 @@ public class MainControl : MonoBehaviour
 
 
                         float TotalTime = (float)(Math.Sqrt((-V84x - originx) * (-V84x - originx) + (V84y - originy) * (V84y - originy) + (V84z - originz) * (V84z - originz)) / V81);
-
-                        //Debug.Log(TotalTime);
                         float cutpart = 20 * TotalTime;
 
                         float AlRDmov0 = 0, AlRDmov1 = 0, AlRDmov2 = 0;
@@ -299,7 +282,6 @@ public class MainControl : MonoBehaviour
                         originx = V84x;
                         originy = V84y;
                         originz = V84z;
-                        //紀錄手臂末端之(x,y,z)座標  剛好為目標物之(x,y,z)座標 必須更新手臂末端的位置
                     }
 
 
@@ -307,23 +289,20 @@ public class MainControl : MonoBehaviour
                 }
 
                 if (instructionsBytes[RDpointer + 5] == 3 || instructionsBytes[RDpointer + 5] == 4 || instructionsBytes[RDpointer + 5] == 5)
-                {//做正運動
-
-
+                {// Forward kinemetic
 
                     float time0 = Mathf.Abs((V84x - sliderTheta0.value) / V80x);
                     float time1 = Mathf.Abs((V84y - sliderTheta1.value) / V80y);
                     float time2 = Mathf.Abs((V84z - sliderTheta2.value) / V80z);
                     float maxtime = time2 > (time0 > time1 ? time0 : time1) ? time2 : (time0 > time1 ? time0 : time1);
 
-                    // motortheta代表應移動角度
+                    // motortheta means the angle that suppose to move for each moter
                     float motor0theta = V84x - sliderTheta0.value;
                     float motor1theta = V84y - sliderTheta1.value;
                     float motor2theta = V84z - sliderTheta2.value;
 
-                    float AlRDmov0 = 0, AlRDmov1 = 0, AlRDmov2 = 0; //已轉角度
+                    float AlRDmov0 = 0, AlRDmov1 = 0, AlRDmov2 = 0; //moved angle
                     float cutpart = 20 * maxtime;
-                    //Debug.Log(maxtime);
 
                     for (float i = 0; i < maxtime; i = i + (float)(maxtime / cutpart))
                     {
@@ -369,18 +348,17 @@ public class MainControl : MonoBehaviour
 
             }
             RDpointer = RDpointer + instructionsBytes[RDpointer + 2] + 4;
-            //Debug.Log(RDpointer);
         }
-        //----------------------------------------------------------------------------------------------------------------
 
+        // Check if the data is sending, if so, wait for another 5 sec
         if (((instructionsBytes[RDpointer] == instructionsBytes[RDpointer + 1]) && instructionsBytes[RDpointer] == 170) && ((instructionsBytes[RDpointer + 2]) != instructionsBytes[RDpointer + 2 + 1 + instructionsBytes[RDpointer + 2]]))
-        {//資料未完全傳輸完畢 等五秒後再讀取資料
+        {
             yield return new WaitForSeconds(5);
         }
 
-
+        // If reader unrecognized ID, ignore and read the next block of data
         if (((instructionsBytes[RDpointer] == instructionsBytes[RDpointer + 1]) && instructionsBytes[RDpointer] == 170) && ((instructionsBytes[RDpointer + 3] != 62) || (instructionsBytes[RDpointer + 3] != 73) || (instructionsBytes[RDpointer + 3] != 80) || (instructionsBytes[RDpointer + 3] != 81) || (instructionsBytes[RDpointer + 3] != 84)))
-        {//讀到不認識的ＩＤ
+        {
             RDpointer = RDpointer + instructionsBytes[RDpointer + 2] + 4;
         }
         checkkey = true;
@@ -443,11 +421,11 @@ public class MainControl : MonoBehaviour
     }
     void CoorDetermine(float theta0, float theta1, float theta2)
     {
-        float theta0use = (float)(theta0 / 180 * PI); //弧度
+        float theta0use = (float)(theta0 / 180 * PI); //angle
         float theta1use = (float)(theta1 / 180 * PI);
         float theta2use = (float)((theta2 + 80) / 180 * PI);
         float TD = (float)(Mathf.Sqrt(187 * 187 + 135 * 135 - 2 * 135 * 187 * Mathf.Cos(theta2use)));
-        float phi = (float)(Mathf.Acos((TD * TD + 135 * 135 - 187 * 187) / (2 * 135 * TD)));  //弧度
+        float phi = (float)(Mathf.Acos((TD * TD + 135 * 135 - 187 * 187) / (2 * 135 * TD)));  //angle
 
 
         TargetCoorX = -TD * Mathf.Sin(theta0use);
@@ -470,7 +448,7 @@ public class MainControl : MonoBehaviour
 
 
     }
-    public bool suckfunc(float coorX, float coorY, float coorZ)  //判斷吸盤是否離目標物夠接近
+    public bool suckfunc(float coorX, float coorY, float coorZ)  // Check if the suction cup is close enough to the object
     {
 
         float testtheta3, testtheta1, testtheta2;

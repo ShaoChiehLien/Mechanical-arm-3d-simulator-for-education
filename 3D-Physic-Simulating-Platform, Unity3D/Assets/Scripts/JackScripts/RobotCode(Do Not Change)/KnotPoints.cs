@@ -19,10 +19,7 @@ public class KnotPoints : MonoBehaviour {
 	//hide all icons
 	void Start () 
 	{
-		//for (int i = 0; i < checks.Length; i++)
-		//{
-		//	checks[i].SetActive(false);
-		//}
+		
 	}
 
 	//executed when "save position" is clicked
