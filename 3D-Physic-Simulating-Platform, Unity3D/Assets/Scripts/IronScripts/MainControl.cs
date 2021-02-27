@@ -257,7 +257,7 @@ public class MainControl : MonoBehaviour
                         for (float i = 0; i < TotalTime; i = i + (float)(TotalTime / cutpart))
                         {
 
-                            if (Mathf.Abs(AlRDmov0) < Mathf.Abs(motor0theta))
+                            if ((Mathf.Abs(AlRDmov0) < Mathf.Abs(motor0theta)) && Check_suck.transform.position.y > 5)
                             {
                                 sliderTheta0.value = sliderTheta0.value + motor0theta / cutpart;
                                 AlRDmov0 = Mathf.Abs(AlRDmov0) + Mathf.Abs(motor0theta / cutpart);
@@ -268,7 +268,7 @@ public class MainControl : MonoBehaviour
 
                             }
 
-                            if (Mathf.Abs(AlRDmov1) < Mathf.Abs(motor1theta))
+                            if ((Mathf.Abs(AlRDmov1) < Mathf.Abs(motor1theta)) && Check_suck.transform.position.y > 5)
                             {
                                 sliderTheta1.value = sliderTheta1.value + motor1theta / cutpart;
                                 AlRDmov1 = Mathf.Abs(AlRDmov1) + Mathf.Abs(motor1theta / cutpart);
@@ -279,7 +279,7 @@ public class MainControl : MonoBehaviour
 
                             }
 
-                            if (Mathf.Abs(AlRDmov2) < Mathf.Abs(motor2theta))
+                            if ((Mathf.Abs(AlRDmov2) < Mathf.Abs(motor2theta)) && Check_suck.transform.position.y > 5)
                             {
                                 sliderTheta2.value = sliderTheta2.value + motor2theta / cutpart;
                                 AlRDmov2 = Mathf.Abs(AlRDmov2) + Mathf.Abs(motor2theta / cutpart);
@@ -328,7 +328,7 @@ public class MainControl : MonoBehaviour
                     for (float i = 0; i < maxtime; i = i + (float)(maxtime / cutpart))
                     {
 
-                        if (Mathf.Abs(AlRDmov0) < Mathf.Abs(motor0theta))
+                        if ((Mathf.Abs(AlRDmov0) < Mathf.Abs(motor0theta)) && Check_suck.transform.position.y > 5)
                         {
                             sliderTheta0.value = sliderTheta0.value + motor0theta / cutpart;
                             AlRDmov0 = Mathf.Abs(AlRDmov0) + Mathf.Abs(motor0theta / cutpart);
@@ -339,7 +339,7 @@ public class MainControl : MonoBehaviour
                             sliderTheta0.value = sliderTheta0.value;
                         }
 
-                        if (Mathf.Abs(AlRDmov1) < Mathf.Abs(motor1theta))
+                        if ((Mathf.Abs(AlRDmov1) < Mathf.Abs(motor1theta)) && Check_suck.transform.position.y > 5)
                         {
                             sliderTheta1.value = sliderTheta1.value + motor1theta / cutpart;
                             AlRDmov1 = Mathf.Abs(AlRDmov1) + Mathf.Abs(motor1theta / cutpart);
@@ -349,7 +349,7 @@ public class MainControl : MonoBehaviour
                             sliderTheta1.value = sliderTheta1.value;
                         }
 
-                        if (Mathf.Abs(AlRDmov2) < Mathf.Abs(motor2theta))
+                        if ((Mathf.Abs(AlRDmov2) < Mathf.Abs(motor2theta)) && Check_suck.transform.position.y > 5)
                         {
                             sliderTheta2.value = sliderTheta2.value + motor2theta / cutpart;
                             AlRDmov2 = Mathf.Abs(AlRDmov2) + Mathf.Abs(motor2theta / cutpart);
@@ -387,54 +387,54 @@ public class MainControl : MonoBehaviour
     }
     void JOGcmdcoor(int a)
     {
-        if (a == 1)
+        if (a == 1 && Check_suck.transform.position.y > 5)
         {
             originx += 5;
         }
-        if (a == 2)
+        if (a == 2 && Check_suck.transform.position.y > 5)
         {
             originx -= 5;
         }
-        if (a == 3)
+        if (a == 3 && Check_suck.transform.position.y > 5)
         {
             originy += 5;
         }
-        if (a == 4)
+        if (a == 4 && Check_suck.transform.position.y > 5)
         {
             originy -= 5;
         }
-        if (a == 5)
+        if (a == 5 && Check_suck.transform.position.y > 5)
         {
             originz += 5;
         }
-        if (a == 6)
+        if (a == 6 && Check_suck.transform.position.y > 5)
         {
             originz -= 5;
         }
     }
     void JOGcmdsection(int a)
     {
-        if (a == 1)
+        if (a == 1 && Check_suck.transform.position.y > 5)
         {
             sliderTheta0.value += 1;
         }
-        if (a == 2)
+        if (a == 2 && Check_suck.transform.position.y > 5)
         {
             sliderTheta0.value -= 1;
         }
-        if (a == 3)
+        if (a == 3 && Check_suck.transform.position.y > 5)
         {
             sliderTheta1.value += 1;
         }
-        if (a == 4)
+        if (a == 4 && Check_suck.transform.position.y > 5)
         {
             sliderTheta1.value -= 1;
         }
-        if (a == 5)
+        if (a == 5 && Check_suck.transform.position.y > 5)
         {
             sliderTheta2.value += 1;
         }
-        if (a == 6)
+        if (a == 6 && Check_suck.transform.position.y > 5)
         {
             sliderTheta2.value -= 1;
         }
