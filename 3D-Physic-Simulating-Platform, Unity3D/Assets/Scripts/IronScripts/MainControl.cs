@@ -20,6 +20,7 @@ public class MainControl : MonoBehaviour
     public GameObject dontmove;
     public Rigidbody objectSphererigid;
     public Rigidbody objectSphererigid1;
+    public GameObject Check_suck;
     public const double PI = 3.14159265358979;
     bool checkkey = true;
     public int NewDataSign = 0;
@@ -102,8 +103,8 @@ public class MainControl : MonoBehaviour
 
         while (((instructionsBytes[RDpointer] == instructionsBytes[RDpointer + 1]) && instructionsBytes[RDpointer] == 170) && ((instructionsBytes[RDpointer + 2]) == instructionsBytes[RDpointer + 2 + 1 + instructionsBytes[RDpointer + 2]]))
         {
-            //bool CloseCond = suckfunc(objectSphere.transform.position.x, objectSphere.transform.position.y, objectSphere.transform.position.z); //隨時更新末端和目標物的角度關係
-            bool CloseCond = true;
+            bool CloseCond = suckfunc(objectSphere.transform.position.x, objectSphere.transform.position.y, objectSphere.transform.position.z); //隨時更新末端和目標物的角度關係
+            // bool CloseCond = true;
             //----------------------------------------------------------------------------------------------------------------
             if (instructionsBytes[RDpointer + 3] == 62)
             {
@@ -472,29 +473,15 @@ public class MainControl : MonoBehaviour
     public bool suckfunc(float coorX, float coorY, float coorZ)  //判斷吸盤是否離目標物夠接近
     {
 
-        float testtheta0, testtheta1, testtheta2;
+        float testtheta3, testtheta1, testtheta2;
+        float suckmargin = 30F;
 
-        float TargetDest = Mathf.Sqrt((coorX - motor1x) * (coorX - motor1x) + (coorY - motor1y) * (coorY - motor1y) + (coorZ - motor1z) * (coorZ - motor1z));
-        float suckmargin = 100f;
-        if (coorZ > -60)
+        testtheta1 = Mathf.Abs(coorX - Check_suck.transform.position.x);
+        testtheta2 = Mathf.Abs(coorY - Check_suck.transform.position.y);
+        testtheta3 = Mathf.Abs(coorZ - Check_suck.transform.position.z);
+
+        if ((testtheta1 < suckmargin) && (testtheta2 < suckmargin) && (testtheta3 < suckmargin))
         {
-            testtheta0 = (float)((Math.Atan(Mathf.Abs(motor1x - coorX) / Mathf.Abs(motor1z - coorZ)) * 180 / PI));
-        }
-        else
-        {
-            testtheta0 = (float)(180 - (Math.Atan((motor1x - coorX) / (motor1z - coorZ)) * 180 / PI));
-        }
-        testtheta1 = (float)((Math.Asin((coorY - motor1y) / TargetDest) * 180 / PI) + Math.Acos((18225 + TargetDest * TargetDest - 34969) / (2 * 135 * TargetDest)) * 180 / PI);
-        testtheta2 = (float)((Math.Acos((18225 + 34969 - TargetDest * TargetDest) / (2 * 135 * 187)) * 180 / PI) - 80);
-
-
-        Debug.Log(Mathf.Abs(sliderTheta0.value - testtheta0));  //三個關節角度跟理論上關節應轉角度的誤差
-        Debug.Log(Mathf.Abs(sliderTheta1.value - testtheta1));
-        Debug.Log(Mathf.Abs(sliderTheta2.value - testtheta2));
-
-        if ((Mathf.Abs(sliderTheta0.value - testtheta0) < suckmargin) && (Mathf.Abs(sliderTheta1.value - testtheta1) < suckmargin) && (Mathf.Abs(sliderTheta2.value - testtheta2) < suckmargin))
-        {
-
             return true;
         }
         else

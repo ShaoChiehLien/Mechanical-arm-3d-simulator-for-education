@@ -3,7 +3,21 @@ guid: d44753632554c40c881bae93910bae45
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sliderTheta0: {instanceID: 0}
+  - sliderTheta1: {instanceID: 0}
+  - sliderTheta2: {instanceID: 0}
+  - UpperArm: {instanceID: 0}
+  - objectSphere: {instanceID: 0}
+  - objectSphere1: {instanceID: 0}
+  - dontmove: {instanceID: 0}
+  - objectSphererigid: {instanceID: 0}
+  - objectSphererigid1: {instanceID: 0}
+  - Check_suck: {instanceID: 0}
+  - Xposition: {instanceID: 0}
+  - Yposition: {instanceID: 0}
+  - Zposition: {instanceID: 0}
+  - serverScript: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
