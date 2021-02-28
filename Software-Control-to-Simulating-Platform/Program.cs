@@ -43,7 +43,7 @@ namespace NetworkTestVSC
             ptpJointParams.velocity[2] = 50F;
             SetPTPJointParams(ptpJointParams);
 
-            //Use forward kinematics, move to coordinate（-270, 140, 95）
+            //Use inverse kinematics, move to coordinate（-270, 140, 95）
             ptpCmd.ptpMode = 1;
             ptpCmd.x = -270F;
             ptpCmd.y = 140F;
@@ -60,7 +60,7 @@ namespace NetworkTestVSC
             ptpCmd.z = 56.9F;
             SetPTPCmd(ptpCmd);
 
-            //Turn on the suction cup and release the object
+            //Turn off the suction cup and release the object
             SetEndEffectorSuctionCup(false);
 
             /* ********************************************************** */
