@@ -10,25 +10,25 @@ API for users to control the robotic arm movement using Wifi communication
 <!--- Add descriptions -->
 ## 1. PTPJointParams
 ### **Description**
-ptpJointParams variable pointers
+Point to point (PTP) parameters, set the speed and acceleration of joint(motor) coordinate axis.
 ### **Variables**
 | Variable        | Data Type    | Default Value       | Description   |
 | :-------------: | :----------: | :-----------:       | :-----------: |
-| velocity        | float[4]     | {1, 5, 10, 15}      |               |
-| acceleration    | float[4]     | {50, 100, 150, 200} |               |
+| velocity        | float[4]     | {1, 5, 10, 15}      | Rotation velocity of each motor|
+| acceleration    | float[4]     | {50, 100, 150, 200} | Rotation acceleration of each motor|
 
 
 <!--- Add descriptions -->
 ## 2. PTPCoordinateParams
 ### **Description**
-PTPCoordinateParams variable pointers
+Point to point (PTP) parameters, set the speed and accerleration of the Cartesian axis.
 ### **Variables**
 | Variable        | Data Type    | Default Value | Description   |
 | :-------------: | :----------: | :-----------: | :-----------: |
-| xyzVelocity     | float        | 5             |               |
-| rVelocity       | float        | 5             |               |
-| xyzAcceleration | float        | 5             |               |
-| rAccleration    | float        | 5             |               |
+| xyzVelocity     | float        | 5             | Moving velocity of the tip of suction cup |
+| rVelocity       | float        | 5             | Reserved for future use |
+| xyzAcceleration | float        | 5             | Moving acceleration of the tip of suction cup|
+| rAccleration    | float        | 5             | Reserved for future use|
 
 
 <!--- Add descriptions -->
@@ -45,15 +45,15 @@ JOG command variable pointers
 <!--- Add descriptions -->
 ## 4. PTPCmd
 ### **Description**
-PTP command variable pointers
+Pont to point (PTP) commands, set the starting point and the end point to make the simulated arm move
 ### **Variables**
 | Variable        | Data Type    | Description  |
 | :-------------: | :----------: | :-----------:|
-| ptpMode         | byte         |              |
-| x               | float        |              |
-| y               | float        |              |
-| z               | float        |              |
-| r               | float        |              |
+| ptpMode         | byte         | 1 for inverse kinemetic, 3 for forward kinemetic|
+| x               | float        | First Joint(motor) coordinate axis if ptpMode = 1, First Cartesian(motor) coordinate axis if ptpMode = 3|
+| y               | float        | Second Joint(motor) coordinate axis if ptpMode = 1, Second Cartesian(motor) coordinate axis if ptpMode = 3|
+| z               | float        | Third Joint(motor) coordinate axis if ptpMode = 1, Third Cartesian(motor) coordinate axis if ptpMode = 3|
+| r               | float        | Reserved for future use|
 
 
 <!--- Add descriptions -->
