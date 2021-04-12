@@ -34,7 +34,7 @@ Point to point (PTP) parameters, set the parameters of speed and accerleration o
 <!--- Add descriptions -->
 ## 3. JOGCmd
 ### **Description**
-JOG mode, moved one unit for a certain axis.
+JOG mode parameters, set the certain axis to moved and the coordinate axis to use
 ### **Variables**
 | Variable        | Data Type    | Description  |
 | :-------------: | :----------: | :-----------:|
@@ -83,7 +83,7 @@ JOG mode, moved one unit for a certain axis (Cartesian coordinate axis or Joint(
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
-|  jogCmd         | JOGCmd       | JOG command   |
+|  jogCmd         | JOGCmd       | moved one unit for a certain axis |
 ### **Return**
 None
 ### **Sample Usage**
