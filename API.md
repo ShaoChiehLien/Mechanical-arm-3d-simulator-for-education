@@ -99,7 +99,7 @@ None
 <!--- Add descriptions -->
 ## 3. SetPTPJointParams
 ### **Description**
-
+Set the speed and acceleration of Joint coordinate axis
 ### **Parameters**
 | Parameter       | Data Type      | Description   |
 | :-------------: | :----------:   | :-----------: |
@@ -120,7 +120,7 @@ None
 <!--- Add descriptions -->
 ## 4. SetPTPCoordinateParams
 ### **Description**
-
+et the speed and acceleration of Cartesian coordinate axis
 ### **Parameters**
 | Parameter            | Data Type           | Description   |
 | :-------------:      | :----------:        | :-----------: |
@@ -140,7 +140,7 @@ None
 <!--- Add descriptions -->
 ## 5. SetPTPCmd
 ### **Description**
-
+Set the starting point and the end point to make the simulated arm move
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
