@@ -177,7 +177,7 @@ Converts an array of bytes to a hex string
 <!--- Add descriptions and example usage -->
 ## 7. ConnectToServer
 ### **Description**
-
+Connect to server (Simulated Arm) using port 127.0.0.1 (self loop) at port 6321
 ### **Parameters**
 None
 ### **Return**
@@ -188,7 +188,7 @@ None
 <!--- Add descriptions and example usage -->
 ## 8. Send
 ### **Description**
-
+Send the Machine Code to the simulated arm
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
