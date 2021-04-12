@@ -79,7 +79,7 @@ None
 <!--- Improve descriptions and example usage -->
 ## 2. SetJOGCmd
 ### **Description**
-JOG mode, moved one unit for a certain axis (Cartesian coordinate axis or Joint(motor) coordinate axis)
+JOG mode, moved one unit (1 cm or 1 degree) for a certain axis (Cartesian coordinate axis or Joint(motor) coordinate axis)
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
