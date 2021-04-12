@@ -120,7 +120,7 @@ None
 <!--- Add descriptions -->
 ## 4. SetPTPCoordinateParams
 ### **Description**
-et the speed and acceleration of Cartesian coordinate axis
+Set the speed and acceleration of Cartesian coordinate axis
 ### **Parameters**
 | Parameter            | Data Type           | Description   |
 | :-------------:      | :----------:        | :-----------: |
