@@ -34,12 +34,12 @@ Point to point (PTP) parameters, set the parameters of speed and accerleration o
 <!--- Add descriptions -->
 ## 3. JOGCmd
 ### **Description**
-JOG command variable pointers
+JOG mode, moved one unit for a certain axis.
 ### **Variables**
 | Variable        | Data Type    | Description  |
 | :-------------: | :----------: | :-----------:|
-| isJoint         | byte         |              |
-| cmd             | byte         |              |
+| isJoint         | byte         | 1 for Joint(motor) coordinate axis, 0 for Cartesian coordinate axis |
+| cmd             | byte         | 1 for motor 1/x axis, 2 for motor 2/y axis, 3 for motor 3/z axis|
 
 
 <!--- Add descriptions -->
@@ -79,7 +79,7 @@ None
 <!--- Improve descriptions and example usage -->
 ## 2. SetJOGCmd
 ### **Description**
-Executes JOG command
+JOG mode, moved one unit for a certain axis (Cartesian coordinate axis or Joint(motor) coordinate axis)
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
