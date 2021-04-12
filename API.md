@@ -3,7 +3,7 @@
 ### Authors:  ['Po-Hsun Chen', 'Shao-Chieh Lien', 'Shristi Saraff']
 
 ## Introduction
-API for users to control the robotic arm movement using Wifi communication
+API for users to control the robotic arm movement using Wifi communication using Visual Studio Code with .Net framework
 <br><br/>
 # Defined Structs
 
