@@ -56,19 +56,6 @@ Pont to point (PTP) commands, set the starting point and the end point to make t
 | r               | float        | Reserved for future use|
 
 
-<!--- Add descriptions -->
-## 5. Message
-### **Description**
-
-### **Variables**
-| Variable        | Data Type    | Description  |
-| :-------------: | :----------: | :-----------:|
-| id              | byte         |              |
-| rw              | byte         |              |
-| isQueued        | byte         |              |
-| paramsLen       | byte         |              |
-| parameters      | byte[]       |              |
-
 <br><br/>
 # Functions
 
