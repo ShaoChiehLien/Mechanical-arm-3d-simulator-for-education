@@ -10,7 +10,7 @@ API for users to control the robotic arm movement using Wifi communication
 <!--- Add descriptions -->
 ## 1. PTPJointParams
 ### **Description**
-Point to point (PTP) parameters, set the speed and acceleration of joint(motor) coordinate axis.
+Point to point (PTP) parameters, set the parameters of the speed and acceleration of joint(motor) coordinate axis.
 ### **Variables**
 | Variable        | Data Type    | Default Value       | Description   |
 | :-------------: | :----------: | :-----------:       | :-----------: |
@@ -21,7 +21,7 @@ Point to point (PTP) parameters, set the speed and acceleration of joint(motor) 
 <!--- Add descriptions -->
 ## 2. PTPCoordinateParams
 ### **Description**
-Point to point (PTP) parameters, set the speed and accerleration of the Cartesian axis.
+Point to point (PTP) parameters, set the parameters of speed and accerleration of the Cartesian axis.
 ### **Variables**
 | Variable        | Data Type    | Default Value | Description   |
 | :-------------: | :----------: | :-----------: | :-----------: |
@@ -45,7 +45,7 @@ JOG command variable pointers
 <!--- Add descriptions -->
 ## 4. PTPCmd
 ### **Description**
-Pont to point (PTP) commands, set the starting point and the end point to make the simulated arm move
+Pont to point (PTP) commands, set the parameters of starting point and the end point to make the simulated arm move
 ### **Variables**
 | Variable        | Data Type    | Description  |
 | :-------------: | :----------: | :-----------:|
@@ -103,7 +103,7 @@ None
 ### **Parameters**
 | Parameter       | Data Type      | Description   |
 | :-------------: | :----------:   | :-----------: |
-|  ptpJointParams | PTPJointParams |               |
+|  ptpJointParams | PTPJointParams | Set the speed and acceleration of Joint coordinate axis|
 ### **Return**
 None
 ### **Sample Usage**
@@ -124,7 +124,7 @@ None
 ### **Parameters**
 | Parameter            | Data Type           | Description   |
 | :-------------:      | :----------:        | :-----------: |
-|  ptpCoordinateParams | PTPCoordinateParams |               |
+|  ptpCoordinateParams | PTPCoordinateParams | Set the speed and acceleration of Cartesian coordinate axis|
 ### **Return**
 None
 ### **Sample Usage**
@@ -144,7 +144,7 @@ None
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
-|  ptpCmd         | PTPCmd       |               |
+|  ptpCmd         | PTPCmd       |  Set the starting point and the end point to make the simulated arm move|
 ### **Return**
 None
 ### **Sample Usage**
@@ -166,11 +166,11 @@ Converts an array of bytes to a hex string
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
-|  bytes          | byte[]       |               |
+|  bytes          | byte[]       | Convert the Machine Code (byte string) to Human Readable Form (hex string)|
 ### **Return**
 | Return Type     | Description  |
 | :-------------: | :----------: |
-|  string         |              |
+|  string         | The hexstring of the input |
 ### **Sample Usage**
 
 
@@ -192,7 +192,7 @@ None
 ### **Parameters**
 | Parameter       | Data Type    | Description   |
 | :-------------: | :----------: | :-----------: |
-|  data           | string       |               |
+|  data           | string       | Send the Machine Code to the simulated arm |
 ### **Return**
 None
 ### **Sample Usage**
