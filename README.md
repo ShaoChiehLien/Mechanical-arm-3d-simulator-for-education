@@ -7,8 +7,8 @@ The high cost of a mechanical arm creates a barrier for students to have access 
 
 ## Proposed Solution
 A 3D simulator that could simulate a mechanical arm and provide a GUI for students to understand the robot’s architecture and provide a coding environment for students to learn robotic programming using high-level languages. It could meet two needs in one solution 
-1. - Computer Science students could learn mechanical arm architecture
-2. 2. Mechanical Engineering students could learn to program robots
+1. Computer Science students could learn mechanical arm architecture
+2. Mechanical Engineering students could learn to program robots
 It is cheap and portable, suitable for educational use and there is low risk associated with application.
 
 
