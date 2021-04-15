@@ -26,7 +26,7 @@ Coding environment for users to control the robotic arm movement using Wifi comm
 
 "Scholarly Project Poster.pdf"/"Scholarly Project PowerPoint.pdf": Poster and PowerPoint that is used in the Purdue Honors College Scholarly Project Presentation.
 
-"sample code.cs": Sample code for the coding environment.
+"sample code.cs": Sample code for controlling the mechanical arm in the coding environment.
                                             
 ## Project Video Presentation and Demostration
 https://www.youtube.com/watch?v=TzMvNWgXAe0&t=316s
