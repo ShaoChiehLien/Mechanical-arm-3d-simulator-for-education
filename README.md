@@ -20,13 +20,13 @@ The simulating platform displayed the robotic arm and the basic slider control.
 Coding environment for users to control the robotic arm movement using Wifi communication.
 
 ## Documentation
-API.md: Application Programming Interface for contolling the simulated mechanical arm using high-level language.
+"API.md": Application Programming Interface for contolling the simulated mechanical arm using high-level language.
 
-Communication Protocal.md: Communication protocal for contributer to extend the functionality of the coding environment.
+"Communication Protocal.md": Communication protocal for contributer to extend the functionality of the coding environment.
 
-Scholarly Project Poster/Scholarly Project PowerPoint: Poster and PowerPoint that is used in the Purdue Honors College Scholarly Project Presentation.
+"Scholarly Project Poster.pdf"/"Scholarly Project PowerPoint.pdf": Poster and PowerPoint that is used in the Purdue Honors College Scholarly Project Presentation.
 
-sample code.cs: Sample code for the coding environment.
+"sample code.cs": Sample code for the coding environment.
                                             
 ## Project Video Presentation and Demostration
 https://www.youtube.com/watch?v=TzMvNWgXAe0&t=316s
